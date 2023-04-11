@@ -1,0 +1,25 @@
+body {
+  background-color: antiquewhite;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+fieldset {
+  width: 700px;
+  height: auto;
+  border: 1px solid;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
