@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="assets/Styles/questions.css" />
+    <title>Questions</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ask Nicolas your questions</h1>
+    </header>
+    <main>
+      <article>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Your information</legend>
+            <div class="form-group">
+              <label for="firstName">First name:</label>
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                placeholder="John"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last name:</label>
+              <input id="lastName" type="text" placeholder="Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="sex">Sex:</label>
+              <select name="sex" id="sex" required>
+                <option value="-">-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input
+                id="age"
+                type="number"
+                placeholder="In years"
+                min="18"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="number">Phone number:</label>
+              <input
+                id="number"
+                type="number"
+                name="number"
+                placeholder="XXX-XXX-XXXX"
+              />
+            </div>
+          </fieldset>
+          <fieldset id="questionContainer">
+            <legend>Your question</legend>
+            <div class="form-group">
+              <label for="question">Ask away:</label>
+              <textarea
+                name="question"
+                id="question"
+                required
+                placeholder="Type none if no question..."
+              ></textarea>
+            </div>
+            <hr />
+            <div class="form-group">
+              <label for="frequentQ">Frequently asked questions:</label>
+              <select required name="frequentQ" id="frequentQ">
+                <option value="question1">-</option>
+                <option value="question2">Where were you raised?</option>
+                <option value="question3">Do you have any siblings?</option>
+                <option value="question4">
+                  Which language do you prefer to speak?
+                </option>
+              </select>
+            </div>
+          </fieldset>
+          <input type="submit" />
+        </form>
+        <a class="back" href="nicolaswalser.html">Go back to home page</a>
+      </article>
+    </main>
+  </body>
+</html>
